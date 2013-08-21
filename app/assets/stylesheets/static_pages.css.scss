@@ -2,6 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.orbit-container.orbit-stack-on-small{
+  background: black;
+}
+
 a {
   color: #B93B8F;
 }
@@ -32,19 +36,20 @@ a:hover{
 }
 
 #christina-first-side-caption{
-  width: 205px;
-  margin-left: 76%;
+  width: 25%;
+  margin-left: 65%;
   height: 100%;
   text-align: center;
-  padding-top: 10%;
+  margin-bottom: -5%;
 }
 
+// optimized for heroku
 #christina-second-side-caption{
-  width: 205px;
-  margin-left: 76%;
+  width: 25%;
+  margin-left: 65%;
   height: 100%;
   text-align: center;
-  padding-top: 10%;
+  margin-bottom: -7%;
 }
 
 #live {
