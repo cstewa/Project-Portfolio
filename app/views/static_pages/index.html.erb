@@ -115,19 +115,19 @@
       <li id = "trivia_about">
         <h3>hashestachetoWHAT?</h3>
         <p> For this project, we were instructed to make a trivia game. There are three users, each of whom is assigned a key on the keyboard. If one thinks they know the right answer, they press their key and can click on the proper answer. Whoever gets the greatest number of right answers at the end wins. </p>
-        <p> The topic is based on an inside-joke (and a nerdy one of course) that we had with all of our classmates. One of us made an app based off of turning Github's "Octocat" into a cat with a "hash"-mustache, that purported to help (read: terrify) little kids who want to learn to code. </p>
+        <p> The topic is based on an inside-joke (and a nerdy one) that we had with all of our classmates. One of us made an app based off of turning Github's "Octocat" into a cat with a "hash"-mustache, that purported to help (read: terrify) little kids who want to learn to code. </p>
       </li>
       <li>
         <img src="/assets/game_load.png" />
-        <div class="orbit-caption"> If Baylee thinks she knows the answer, she presses "B" and her name is highlighted. She now has the chance to try to choose the proper answer. The game is a Rails app written almost entirely in CoffeeScript. </div>
+        <div class="orbit-caption trivia"> If Baylee thinks she knows the answer, she presses "B" and her name is highlighted. She now has the chance to try to choose the proper answer. The game is a Rails app written almost entirely in CoffeeScript. </div>
       </li>
       <li>
         <img src="/assets/wrong_answer.png" />
-        <div class="orbit-caption">Should she choose the wrong answer, we use a JQuery-UI plugin to "shake" the answers. We discern whether or not the answer is correct by sending an AJAX call to a controller and action with data about the chosen answer. Our answers are saved in our PSQL database with an is_correct Boolean column. Our JSON response indicates whether or not is_correct is true, and we handle this upon the success of our call. </div>
+        <div class="orbit-caption trivia">Should she choose the wrong answer, we use a JQuery-UI plugin to "shake" the answers. We discern whether or not the answer is correct by sending an AJAX call to a controller and action with data about the chosen answer. Our answers are saved in our PSQL database with an is_correct Boolean column. Our JSON response indicates whether or not is_correct is true, and we handle this upon the success of our call. </div>
       </li>
       <li>
         <img src="/assets/hashstachelast.png" />
-        <div class="orbit-caption">We display the next question and set of answers via a similar process: sending an AJAX call containing data about the current question. We get this data from the "data" attribute of an element on the page. We run a SQL query to find the current question in our PSQL database, return to us the subsequent question (the question whose ID is one greater), and set the new current question to that question. We then display it and use CoffeeScript to change the "data" attribute of our element to hold information about this new current question instead, so that the process can start again. </div>
+        <div class="orbit-caption trivia">We display the next question and set of answers via a similar process: sending an AJAX call containing data about the current question. We get this data from the "data" attribute of an element on the page. We run a SQL query to find the current question in our PSQL database, return to us the subsequent question (the question whose ID is one greater), and set the new current question to that question. We then display it and use CoffeeScript to change the "data" attribute of our element to hold information about this new current question instead, so that the process can start again. </div>
       </li>
     </ul>
   </div>
