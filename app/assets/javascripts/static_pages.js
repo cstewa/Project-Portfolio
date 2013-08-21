@@ -41,6 +41,12 @@ $(document).ready(function(){
     $("#corequest_slideshow").show().siblings().not("#x").hide();
   });
 
+  $('#trivia').on('click', function() {
+    $("#slideshow").show();
+    $('#project_holder').hide();
+    $("#trivia_slideshow").show().siblings().not("#x").hide();
+  });
+
   //slideshow specific
 
   $('.continue_reading').on('click', function() {
