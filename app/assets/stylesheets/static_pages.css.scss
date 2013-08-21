@@ -27,6 +27,26 @@ a:hover{
   color: #B93B8F;
 }
 
+.orbit-caption {
+  text-align: center;
+}
+
+#christina-first-side-caption{
+  width: 205px;
+  margin-left: 76%;
+  height: 100%;
+  text-align: center;
+  padding-top: 10%;
+}
+
+#christina-second-side-caption{
+  width: 205px;
+  margin-left: 76%;
+  height: 100%;
+  text-align: center;
+  padding-top: 10%;
+}
+
 #live {
   background-color: black;
   color: #B93B8F;
@@ -39,17 +59,19 @@ a:hover{
   background-color: black;
   color: #B93B8F;
   font-size: 15px;
-  padding-top: 50px;
 }
 
 #impetus>.title{
   text-align: center;
-  font-size: 20px;
+  font-size: 17px;
+  margin-top: 10%;
 }
 
 #target_audience>.title{
-  text-align: center;
+  width: 80%;
+  margin-left: 35%;
   font-size: 17px;
+  margin-bottom: 5%;
 }
 
 .bigger_font {
