@@ -10,7 +10,7 @@
 <div class= "row">
   <div class = "small-10 small-offset-1 large-10 large-offset-1 columns" id= "intro">
     $('#full_stack_web_developer').html("Graduated from Penn in 2012 having studied English/Marketing. Admired the potential for disruption of the tech world and came out to the Valley to work in sales at an API management startup, and later technical marketing writing. Wanted to learn how the products I evangelized were built, so I decided to do a Web Development Boot Camp. Discovered that, along with and perhaps moreso than marketing them, I really enjoyed creating and programming apps. And seeing the tangible results of my work, which I have documented below. Hear more of my story and why I love to code <a href = "http://www.christinastewartsblog.com"> here. </a>"). </br> </br>
-    //please note that this is a <em> working </em> portfolio. I graduated from the course a only couple days ago and that's all the time I've had thus far, so please excuse any styling mishaps and know that I have more projects to showcase coming up!
+    //This is a <em> working </em> portfolio. More projects to showcase coming up!
   </div>
   <div class= "large-2 small-2 columns"> </div>
 </div>
@@ -98,15 +98,15 @@
         <p> or be guided through it first and check it out afterwards! </p>
       </li>
       <li>
-        <p class = "pink" id= "one-liner">ONE-LINER</p>
+        <p class = "pink" id= "one-liner"> COREQUEST </p>
         <p class= "pink" id= "one-liner-p"> CoreQuest allows teachers to search and categorize our massive database of free online resources aligned wtih Common Core State Standards. </p>
       </li>
       <li>
-        <p class = "pink" id= "what-are-ccss">What are Common Core State Standards?</p>
+        <p class = "pink" id= "what-are-ccss">WHAT ARE COMMON CORE STATE STANDARDS?</p>
         <p class= "pink" id= "what-are-ccss-p"> 70% of schools in the U.S. are public. The majority rely on standards to guide their teaching practice. Common Core State Standards build high level critical thinking skills, while standardizing reading and math nation-wide. 45 states have now joined the Common Core initiative. California, for example, begins transitioning to Common Core standardized testing next year. Ed Tech has also taken notice. Khan Academy recently received a $2.2 million grant to create math content aligned with Common Core State Standards. </p>
       </li>
       <li>
-        <p id= "corequest_capabilities" class = "pink">CAPABILITIES</p>
+        <p id= "corequest_capabilities" class = "pink">COREQUEST CAPABILITIES</p>
         <p class= "pink" id= "corequest_capabilities_p"> More than ever before, teachers are looking to the internet to find resources aligned with standards. Now that most states adhere to the same standards, CoreQuest is in a unique position to extend a hand to teachers nation-wide. Teachers can search for free online resources, including Khan Academy videos, by subject, grade, topic, and standard. They then bundle resources with similar standards for classroom use. Teachers can share CoreQuest bundles with an entire class or assign bundles to individual students. </p>
       </li>
       <li>
@@ -115,11 +115,15 @@
       </li>
       <li>
         <img src="/assets/bundler.png" />
-        <div class="orbit-caption">We use two jQuery plugins for the resources to scroll and to move on the page when added to the bundle. We use lots of params and db queries to get and pass everything they have searched to this new page! </div>
+        <div class="orbit-caption">We use two jQuery plugins for the resources-to-be-bundled to scroll sideways, and the resources not yet bundled to move on the page when added to the bundle. Intricate db queries based on the params of what the teacher had searched tell the page what resources to display! </div>
       </li>
       <li>
         <img src="/assets/show_bundle.png" />
-        <div class="orbit-caption">Teachers can view a bundle and click on the bottom to edit it, where they will be taken back to the same page as the previous one. (Except now of course it displays the resources according to whether or not they have already bundled them). Made for a very logic-heavy html.erb page.</div>
+        <div class="orbit-caption">Teachers can view a bundle and click on the bottom to edit it, where they will be taken back to the same page where they initially created the bundle. (Except now of course it displays the resources according to whether or not the teacher has already bundled them).</div>
+      </li>
+      <li>
+        <img src="/assets/user_show_bundle.png" />
+        <div class="orbit-caption">Teachers can view all of their bundles from their profile and click links to show, edit, or delete the bundle.</div>
       </li>
     </ul>
   </div>
@@ -145,7 +149,7 @@
       </li>
       <li>
         <img src="/assets/hashstachelast.png" />
-        <div class="orbit-caption trivia">We display the next question and set of answers via a similar process: sending an AJAX call containing data about the current question. We get this data from the "data" attribute of an element on the page. We run a SQL query to find the current question in our PSQL database, return to us the subsequent question (the question whose ID is one greater), and set the new current question to that question. We then display it and use CoffeeScript to change the "data" attribute of our element to hold information about this new current question instead, so that the process can start again. </div>
+        <div id= "trivia_long" class="orbit-caption trivia">We display the next question and set of answers via a similar process: sending an AJAX call containing data about the current question. We get this data from the "data" attribute of an element on the page. We run a SQL query to find the current question in our PSQL database, return to us the subsequent question (the question whose ID is one greater), and set the new current question to that question. We then display it and use CoffeeScript to change the "data" attribute of our element to hold information about this new current question instead, so that the process can start again. </div>
       </li>
     </ul>
   </div>
@@ -155,12 +159,12 @@
         Code is <a href = "https://github.com/cstewa/Tech-Trivia"> here. </a> Please focus on the user.js page, the stocks_controller and the _stocks_rows partial because that's where the coolest parts are. </br> </br>
         <p> Or learn what it's about first and check it out afterwards! </p>
       </li>
-      <li class= "description_paragraph pink">
+      <li class= "pink">
         <p > I was instructed to build an app where users can "buy" a certain amount of shares of a stock. A user can see the price when they first bought it, the latest price, and their profit. My key assignment was to use the morris.js API/library to make a line chart that updates the current price of the stock in real-time, every five seconds. This way, a user sees a continuously moving line indicating the rise and fall of their share of a given stock. </p>
       </li>
       <li>
         <img id= "first_tradr_image" src="/assets/stocks_basic.png" />
-        <div class="orbit-caption" id= "christina-third-side-caption">  I use AJAX to send the stock symbol to the controller, who sends back data about the stock. I then plot a graph of this data with js. I had created a hash whose keys were stock symbols and values were arrays of data about that stock. Every 5 seconds, I resend the AJAX call which, upon success, pushes new data into the proper array. This way, the graph of the stock symbol keeps the previous data (because its stored in the array) and gets the new data (because its stored in the same array). This tactic also lets a user view multiple stocks simultaneously!  </div>
+        <div class="orbit-caption" id= "christina-third-side-caption">  I use AJAX to send the stock symbol to the controller, which sends back data about the stock. I then plot a graph of this data with js. I had created a hash whose keys were stock symbols and values were arrays of data about that stock. Every 5 seconds, I resend the AJAX call which, upon success, pushes new data into the proper array. This way, the graph of the stock symbol keeps the previous data (because its stored in the array) and gets the new data (because its stored in the same array). This tactic also lets a user view multiple stocks simultaneously!  </div>
       </li>
     </ul>
   </div>

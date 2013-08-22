@@ -18,8 +18,16 @@
 }
 
 .orbit-container .orbit-slides-container>* .orbit-caption.trivia {
-  margin-bottom: -8%;
+  margin-bottom: -2%;
   text-align: center;
+}
+
+//optimize long caption for heroku viewing
+.orbit-container .orbit-slides-container>* .orbit-caption.trivia#trivia_long {
+  margin-bottom: -3%;
+  text-align: justify;
+  width: 86%
+  margin-left: 7%;
 }
 
 .orbit-slides-container > li:first-child {
@@ -62,6 +70,7 @@ a:hover{
   border-radius: 1px;
   margin-top: 5%;
   padding: 3%;
+  max-height: 485px;
 }
 
 // optimized for heroku
