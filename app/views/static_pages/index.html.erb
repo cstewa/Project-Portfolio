@@ -25,7 +25,7 @@
       </li>
       <li id = "impetus">
         <p class = "title"> IMPETUS: </p>
-        <p class = "description_paragraph"> I was bungee jumping in New Zealand with two of my best friends. I hung from a 450 ft rope in the middle of a canyon. With nothing to anchor me amidst the vast, seemingly infinite mountains and fields, I lucidly discerned my atomity in relation to the the physical planet. I absorbed, calm and appreciative while overwhelmed and dwarfed. </br> </br> <a class = "continue_reading" href = "#"> Continue Reading... </a> </p>
+        <p> I was bungee jumping in New Zealand with two of my best friends. I hung from a 450 ft rope in the middle of a canyon. With nothing to anchor me amidst the vast, seemingly infinite mountains and fields, I lucidly discerned my atomity in relation to the the physical planet. I absorbed, calm and appreciative while overwhelmed and dwarfed. </br> </br> <a class = "continue_reading" href = "#"> Continue Reading... </a> </p>
       </li>
       <li>
         <img src="/assets/first_visit.png" />
@@ -139,7 +139,7 @@
   <div id= "tradr_slideshow">
     <ul data-orbit>
       <li class = "pink description_paragraph" >
-        Code is <a href = "https://github.com/cstewa/Tech-Trivia"> here. </a> Please focus on the user.js page, the stocks_controller and the _stocks_rows partial because that's where the coolest parts are. </br>
+        Code is <a href = "https://github.com/cstewa/Tech-Trivia"> here. </a> Please focus on the user.js page, the stocks_controller and the _stocks_rows partial because that's where the coolest parts are. </br> </br>
         <p> Or learn what it's about first and check it out afterwards! </p>
       </li>
       <li>
@@ -147,7 +147,7 @@
       </li>
       <li>
         <img id= "first_tradr_image" src="/assets/stocks_basic.png" />
-        <div class="orbit-caption" id= "christina-third-side-caption"> REPLACE THIS WITH OTHER PIC. My tactic was  AJAX-send the clicked stock symbol to the controller, who back a JSON response with the stock.latest_price and the current time. Upon success, a create_graph JS function first pushes this snippet of stock data into an array. This array is the value that corresponds to that stock's key (its' symbol) in my stock_hash. Second, the function creates the graph on the page. The graph takes as data the value (the array) pertaining to the key (the stock symbol) in my stock_hash. When I resend the AJAX call every five seconds, it populates the array pertaining to that symbol with more stock data. This way, the graph of the stock symbol keeps the previous data (because its stored in the array) and gets the new data (because it gets stored in the same array). AND this tactic lets a user click multiple checkboxes and see their charts simultaneously! </div>
+        <div class="orbit-caption" id= "christina-third-side-caption">  I use AJAX to send the stock symbol to the controller, who sends back data about the stock. I then plot a graph of this data with js. I had created a hash whose keys were stock symbols and values were arrays of data about that stock. Every 5 seconds, I resend the AJAX call which, upon success, pushes new data into the proper array. This way, the graph of the stock symbol keeps the previous data (because its stored in the array) and gets the new data (because its stored in the same array). This tactic also lets a user view multiple stocks simultaneously!  </div>
       </li>
     </ul>
   </div>
@@ -189,9 +189,9 @@
 
           <div id= "tradr" class = "small-6 large-6 columns">
             <a href = "#" class = "pink" class = "move_down"> Tradr. </a>
-            <img id = "hashstache_img" class = "proj_image" src= "/assets/hashstache.png" />
+            <img class = "proj_image" src= "/assets/tradr_small.png" />
             <div class = "make_rods_pink">
-              <span>JavaScript</span> | <span>Rails</span> | <span>AJAX</span> | <span>HAML</span> | <span>Morris.js </span> | <span> YStock Gem </span>
+              <span>JavaScript</span> | <span>Rails</span> | <span>AJAX</span> | <span>HAML</span> | <span>Morris.js </span> | <span> Ruby Gem </span>
             </div>
           </div>
 
