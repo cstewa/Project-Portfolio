@@ -27,29 +27,34 @@ $(document).ready(function(){
   $('#x').on('click', function() {
     $('#slideshow').hide();
     $('#project_holder').show();
+    $('#contact').show();
   });
 
   $('#insights').on('click', function() {
     $("#slideshow").show();
     $('#project_holder').hide();
+    $('#contact').hide();
     $("#noesis_slideshow").show().siblings().not("#x").hide();
   });
 
   $('#corequest').on('click', function() {
     $("#slideshow").show();
     $('#project_holder').hide();
+    $('#contact').hide();
     $("#corequest_slideshow").show().siblings().not("#x").hide();
   });
 
   $('#trivia').on('click', function() {
     $("#slideshow").show();
     $('#project_holder').hide();
+    $('#contact').hide();
     $("#trivia_slideshow").show().siblings().not("#x").hide();
   });
 
   $('#tradr').on('click', function() {
     $("#slideshow").show();
     $('#project_holder').hide();
+    $('#contact').hide();
     $("#tradr_slideshow").show().siblings().not("#x").hide();
   });
 

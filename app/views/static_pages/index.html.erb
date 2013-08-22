@@ -147,7 +147,7 @@
       </li>
       <li>
         <img id= "first_tradr_image" src="/assets/stocks_basic.png" />
-        <div class="orbit-caption" id= "christina-third-side-caption"> REPLACE THIS WITH OTHER PIC. My tactic was to use JS to isolate the stock symbol of the stock that the user clicked on and AJAX-send that symbol to the controller. The controller sends back a JSON response with the stock.latest_price (a Model method) as well as the current time. Upon success, a create_graph JS function first pushes this snippet of stock data into an array. This array is the value that corresponds to that stock's key (its' symbol) in my stock_hash. Second, the function creates the graph on the page. The graph takes as data the value (the array) pertaining to the key (the stock symbol) in my stock_hash. When I resend the AJAX call every five seconds, it populates the array pertaining to that symbol with more stock data. This way, the graph of the stock symbol keeps the previous data (because its stored in the array) and gets the new data (because it gets stored in the same array). AND this tactic lets a user click multiple checkboxes and see their charts simultaneously! </div>
+        <div class="orbit-caption" id= "christina-third-side-caption"> REPLACE THIS WITH OTHER PIC. My tactic was  AJAX-send the clicked stock symbol to the controller, who back a JSON response with the stock.latest_price and the current time. Upon success, a create_graph JS function first pushes this snippet of stock data into an array. This array is the value that corresponds to that stock's key (its' symbol) in my stock_hash. Second, the function creates the graph on the page. The graph takes as data the value (the array) pertaining to the key (the stock symbol) in my stock_hash. When I resend the AJAX call every five seconds, it populates the array pertaining to that symbol with more stock data. This way, the graph of the stock symbol keeps the previous data (because its stored in the array) and gets the new data (because it gets stored in the same array). AND this tactic lets a user click multiple checkboxes and see their charts simultaneously! </div>
       </li>
     </ul>
   </div>
@@ -200,7 +200,6 @@
       </div>
     </div>
     <div class= "small-2 large-2 columns">
-      <div id= "line">  </div>
       <div id= "contact">
         <a href = "http://www.christinastewartsblog.com"> tech_blog </a>
         </br>
