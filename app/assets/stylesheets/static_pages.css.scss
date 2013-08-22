@@ -22,6 +22,15 @@
   text-align: center;
 }
 
+.orbit-slides-container > li:first-child {
+  background-color: black;
+  color: #B93B8F;
+}
+
+.orbit-caption {
+  text-align: center;
+}
+
 //intro
 #intro {
   line-height: 20px;
@@ -44,25 +53,15 @@ a:hover{
   border-right: #B93B8F solid 1px;
 }
 
-// #line_under_name {
-//   border-color: #B93B8F;
-//   // margin-left: 10%;
-//   margin-top: -4%;
-// }
 
 #slideshow {
   width: 70%;
   margin: auto;
   margin-bottom: 30px;
-}
-
-.orbit-slides-container > li:first-child {
-  background-color: black;
-  color: #B93B8F;
-}
-
-.orbit-caption {
-  text-align: center;
+  border: solid #B93B8F 1px;
+  border-radius: 1px;
+  margin-top: 5%;
+  padding: 3%;
 }
 
 // optimized for heroku
@@ -83,6 +82,7 @@ a:hover{
   margin-bottom: -7%;
 }
 
+//noesis
 #live {
   background-color: black;
   color: #B93B8F;
@@ -180,6 +180,21 @@ body {
   border: solid 1px;
   padding-bottom: 5px;
   padding-top: 7px;
+  &:hover{
+    border-color: #B93B8F;
+  }
+  min-height: 270px;
+  max-width: 300px;
+}
+
+#trivia{
+  margin-left: 14px;
+  margin-top: 30px;
+}
+
+#corequest {
+  margin-right: -10px;
+  float: right;
 }
 
 .make_rods_pink, .pink {

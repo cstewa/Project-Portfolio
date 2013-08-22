@@ -18,7 +18,7 @@ $(document).ready(function(){
     },
     function() {
       $(this).find("#email_actual").remove();
-      $(this).text("Email");
+      $(this).text("email");
     }
   );
 
