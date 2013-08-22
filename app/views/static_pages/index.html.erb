@@ -9,7 +9,7 @@
 
 <div class= "row">
   <div class = "small-10 small-offset-1 large-10 large-offset-1 columns" id= "intro">
-    $('#full_stack_web_developer'). Graduated from Penn in 2012 having studied English/Marketing. Admired the potential for disruption of the tech world and came out to the Valley to work in sales at an API management startup, and later technical marketing writing. Wanted to learn how the products I evangelized were built, so I decided to do a Web Development Boot Camp. Discovered that, along with and perhaps moreso than marketing them, I really enjoyed creating and programming apps. And seeing the tangible results of my work, which I have documented below. Hear more of my story and why I love to code <a href = "http://www.christinastewartsblog.com"> here. </a>
+    $('#full_stack_web_developer').html("Graduated from Penn in 2012 having studied English/Marketing. Admired the potential for disruption of the tech world and came out to the Valley to work in sales at an API management startup, and later technical marketing writing. Wanted to learn how the products I evangelized were built, so I decided to do a Web Development Boot Camp. Discovered that, along with and perhaps moreso than marketing them, I really enjoyed creating and programming apps. And seeing the tangible results of my work, which I have documented below. Hear more of my story and why I love to code <a href = "http://www.christinastewartsblog.com"> here. </a>").
   </div>
   <div class= "large-2 small-2 columns"> </div>
 </div>
@@ -136,6 +136,21 @@
       </li>
     </ul>
   </div>
+  <div id= "tradr_slideshow">
+    <ul data-orbit>
+      <li class = "pink description_paragraph" >
+        Code is <a href = "https://github.com/cstewa/Tech-Trivia"> here. </a> Please focus on the user.js page, the stocks_controller and the _stocks_rows partial because that's where the coolest parts are. </br>
+        <p> Or learn what it's about first and check it out afterwards! </p>
+      </li>
+      <li>
+        <p class= "description_paragraph pink"> I was instructed to build an app where users can "buy" a certain amount of shares of a stock. A user can see the price when they first bought it, the latest price, and their profit. My key assignment was to use the morris.js API/library to make a line chart that updates the current price of the stock in real-time, every five seconds. This way, a user sees a continuously moving line indicating the rise and fall of their share of a given stock. </p>
+      </li>
+      <li>
+        <img id= "first_tradr_image" src="/assets/stocks_basic.png" />
+        <div class="orbit-caption" id= "christina-third-side-caption"> REPLACE THIS WITH OTHER PIC. My tactic was to use JS to isolate the stock symbol of the stock that the user clicked on and AJAX-send that symbol to the controller. The controller sends back a JSON response with the stock.latest_price (a Model method) as well as the current time. Upon success, a create_graph JS function first pushes this snippet of stock data into an array. This array is the value that corresponds to that stock's key (its' symbol) in my stock_hash. Second, the function creates the graph on the page. The graph takes as data the value (the array) pertaining to the key (the stock symbol) in my stock_hash. When I resend the AJAX call every five seconds, it populates the array pertaining to that symbol with more stock data. This way, the graph of the stock symbol keeps the previous data (because its stored in the array) and gets the new data (because it gets stored in the same array). AND this tactic lets a user click multiple checkboxes and see their charts simultaneously! </div>
+      </li>
+    </ul>
+  </div>
 </div>
 
 
@@ -169,6 +184,14 @@
             <img id = "hashstache_img" class = "proj_image" src= "/assets/hashstache.png" />
             <div class = "make_rods_pink">
               <span>CoffeeScript</span> | <span>Rails</span> | <span>HTML/CSS</span>
+            </div>
+          </div>
+
+          <div id= "tradr" class = "small-6 large-6 columns">
+            <a href = "#" class = "pink" class = "move_down"> Tradr. </a>
+            <img id = "hashstache_img" class = "proj_image" src= "/assets/hashstache.png" />
+            <div class = "make_rods_pink">
+              <span>JavaScript</span> | <span>Rails</span> | <span>AJAX</span> | <span>HAML</span> | <span>Morris.js </span> | <span> YStock Gem </span>
             </div>
           </div>
 

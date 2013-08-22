@@ -82,6 +82,14 @@ a:hover{
   margin-bottom: -7%;
 }
 
+#christina-third-side-caption{
+  width: 30%;
+  margin-left: 65%;
+  height: 100%;
+  text-align: center;
+  margin-bottom: -4%;
+}
+
 //noesis
 #live {
   background-color: black;
@@ -148,6 +156,12 @@ a:hover{
   margin-left: 10%;
 }
 
+// tradr slides
+#first_tradr_image {
+  height: 80%;
+}
+
+//main page
 
 body {
   color: grey;
@@ -171,12 +185,13 @@ body {
   padding-top: 20px;
 }
 
+// baby project boxes
 #project_holder{
   padding-top: 30px;
   margin-left: 5%;
 }
 
-#insights, #corequest, #trivia{
+#insights, #corequest, #trivia, #tradr{
   border: solid 1px;
   padding-bottom: 5px;
   padding-top: 7px;
@@ -189,6 +204,10 @@ body {
 
 #trivia{
   margin-left: 14px;
+  margin-top: 30px;
+}
+
+#tradr {
   margin-top: 30px;
 }
 

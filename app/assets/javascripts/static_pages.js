@@ -47,6 +47,12 @@ $(document).ready(function(){
     $("#trivia_slideshow").show().siblings().not("#x").hide();
   });
 
+  $('#tradr').on('click', function() {
+    $("#slideshow").show();
+    $('#project_holder').hide();
+    $("#tradr_slideshow").show().siblings().not("#x").hide();
+  });
+
   //slideshow specific
 
   $('.continue_reading').on('click', function() {
