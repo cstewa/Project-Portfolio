@@ -2,6 +2,12 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+#massive{
+  border: 2px solid grey;
+  margin: 3%;
+  padding-bottom: 20px;
+}
+
 .orbit-container.orbit-stack-on-small{
   background: black;
 }
@@ -16,6 +22,11 @@
   text-align: center;
 }
 
+//intro
+#intro {
+  line-height: 20px;
+  text-align: justify;
+}
 
 a {
   color: #B93B8F;
@@ -29,7 +40,15 @@ a:hover{
   font-size: 65px;
   color: grey;
   font-family: 'Source Code Pro', sans-serif;
+  border-bottom: solid #B93B8F 1px;
+  border-right: #B93B8F solid 1px;
 }
+
+// #line_under_name {
+//   border-color: #B93B8F;
+//   // margin-left: 10%;
+//   margin-top: -4%;
+// }
 
 #slideshow {
   width: 70%;
@@ -134,27 +153,22 @@ body {
   color: grey;
   background-color: black;
   font-family: 'Source Code Pro', sans-serif;
-  opacity: .6;
 }
 
 .grey {
   color: grey;
 }
 
-#line{
-  height: 300px;
-  background-color: #B93B8F;
-  width: 1px;
-  position: fixed;
-  margin-left: -10%;
-}
 
 #contact {
   color: #B93B8F;
-  position: fixed;
   line-height: 25px;
   margin-top: 35px;
-  margin-left: -7%;
+  margin-left: -57%;
+  border-left: 1px solid #B93B8F;
+  padding-left: 14px;
+  height: 200px;
+  padding-top: 20px;
 }
 
 #project_holder{
@@ -178,11 +192,6 @@ body {
 }
 .make_rods_pink>span {
   color: grey;
-}
-
-#corequest {
-  margin-top: 15px;
-  margin-bottom: 20px;
 }
 
 .proj_image {
