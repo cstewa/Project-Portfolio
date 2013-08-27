@@ -58,6 +58,13 @@ $(document).ready(function(){
     $("#tradr_slideshow").show().siblings().not("#x").hide();
   });
 
+  $('#thrillr').on('click', function() {
+    $("#slideshow").show();
+    $('#project_holder').hide();
+    $('#contact').hide();
+    $("#thrillr_slideshow").show().siblings().not("#x").hide();
+  });
+
   //slideshow specific
 
   $('.continue_reading').on('click', function() {

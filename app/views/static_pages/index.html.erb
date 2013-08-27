@@ -95,7 +95,7 @@
     <ul data-orbit>
       <li id = "live">
          Take a look at the<a href = "https://github.com/cstewa/project-x"> code, </a>
-        <p> or be guided through it first and check it out afterwards! </p>
+        <p> or be guided through it first and check it out afterwards! When checking out the code, please note the model structure, the Nokogiri-scraped seed file, and the "search" and "bundles" controller/views. </p>
       </li>
       <li>
         <p class = "pink" id= "one-liner"> COREQUEST </p>
@@ -168,6 +168,43 @@
       </li>
     </ul>
   </div>
+  <div id= "thrillr_slideshow">
+    <ul data-orbit>
+      <li class= "pink">
+        <p style="margin-top:20%;width:80%;margin-left:12%"> I was instructed to build a movie theater app where users can browse movies and "purchase" tickets, with seat numbers, to a specfic showing. Specifically, I needed to wisely create my model structure to simulate a real Fandango-esque site, use TDD to test these models, and seed movies and tickets into my database. I also needed to build user authentication from scratch and AJAX the seats that the user clicks to buy so he/she doesn't need to wait for the page to reload. Click <a href= "https://github.com/sumeetjain/WDI-SF-May-2013/wiki/Homework#thursday-july-4"> here </a> to view the written instructions.</p>
+      </li>
+      <li>
+        <img src = "/assets/movies_show.png" />
+        <div class = "orbit-caption">
+          I made my theatre thriller/horror movie-only. This page shows all the movies playing at Thrillr Theatre. One of the films is a screenplay I wrote for a screenwriting class at Penn called Insidious :)
+        </div>
+      </li>
+      <li>
+        <img src = "/assets/movie_showings.png" />
+        <div class = "orbit-caption">
+          Click a film to see all of th dates and times it plays at Thrillr. This is my "showings" model: each showing belongs to a movie, has many tickets, and has many :users, :through => tickets.
+        </div>
+      </li>
+      <li>
+        <img src = "/assets/clicking_a6.png" />
+        <div class = "orbit-caption">
+          Click a seat to buy that seat. This link passes the seat's id through the URL to the tickets controller, update action, which renders a tickets.js view page.
+        </div>
+      </li>
+      <li>
+        <img src = "/assets/clicked_a6.png" />
+        <div class = "orbit-caption">
+          Tickets.js ensures that the current_user has only bought less than 5 tickets to that showing (I was instructed to limit the amount of tickets a user can buy). If this is the case, I save that ticket to the current_user, and make it unclickable via jQuery.
+        </div>
+      </li>
+      <li>
+        <img src = "/assets/thrillr_user_profile.png" />
+        <div class = "orbit-caption">
+          Now, the user's profile shows that they have just bought those two tickets.
+        </div>
+      </li>
+    </ul>
+  </div>
 </div>
 
 
@@ -209,6 +246,18 @@
             <img class = "proj_image" src= "/assets/tradr_small.png" />
             <div class = "make_rods_pink">
               <span>JavaScript</span> | <span>Rails</span> | <span>AJAX</span> | <span>HAML</span> | <span>Morris.js </span> | <span> Ruby Gem </span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class = "row">
+
+          <div id= "thrillr" class = "small-6 large-6 columns">
+            <a href = "#" class = "pink" class = "move_down"> Thrillr. </a>
+            <img class = "proj_image" src= "/assets/movies_show.png" />
+            <div class = "make_rods_pink">
+              <span>Rails</span> | <span>AJAX</span> | <span>RSpec/TDD</span>
             </div>
           </div>
 
