@@ -100,6 +100,18 @@ a:hover{
   margin-bottom: -5%;
 }
 
+#paintr-caption-one, #paintr-caption-two {
+  margin-bottom: 130px;
+}
+
+#paintr-caption-three {
+  margin-bottom: 100px;
+}
+
+#paintr-caption-four {
+  margin-bottom: 300px;
+}
+
 //noesis
 #live {
   background-color: black;
@@ -219,7 +231,7 @@ body {
   margin-left: 5%;
 }
 
-#insights, #corequest, #trivia, #tradr, #thrillr{
+#insights, #corequest, #trivia, #tradr, #thrillr, #paintr{
   border: solid 1px;
   padding-bottom: 5px;
   padding-top: 7px;
@@ -235,8 +247,14 @@ body {
   margin-top: 30px;
 }
 
-#tradr {
+#tradr, #paintr {
   margin-top: 30px;
+}
+
+#thrillr > .proj_image {
+  padding-bottom: 50px;
+  margin-bottom: 30px;
+  padding-right: 7px;
 }
 
 #corequest {

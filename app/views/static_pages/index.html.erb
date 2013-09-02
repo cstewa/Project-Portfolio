@@ -205,6 +205,38 @@
       </li>
     </ul>
   </div>
+
+  <div id= "paintr_slideshow">
+    <ul data-orbit>
+      <li class= "pink">
+        <p style="margin-top:20%;width:80%;margin-left:12%"> Code <a href = "https://github.com/cstewa/paintr" >here. </a> </br> </br> I was instructed to build a JavaScript/jQuery painting app where users can type any color they want to paint with. They can also paste any image url and the image will appear on the page for them to paint over. The key challenge was to find a way to save the newly-painted-over image to the database so that a user could share it. </p>
+      </li>
+      <li>
+        <img src = "/assets/paintr_add_colors.png" />
+        <div class = "orbit-caption" id= "paintr-caption-one">
+          Type in a color. JS/jQuery isolate the color you typed in and sets the background-color of the small box it creates to that color.
+        </div>
+      </li>
+      <li>
+        <img src = "/assets/paintr_add_images.png" />
+        <div class = "orbit-caption" id= "paintr-caption-two">
+          Type in an image URL. JS isolates the url you typed in and sets the background-image of the small box it creates to that image.
+        </div>
+      </li>
+      <li>
+        <img src = "/assets/painting_image.png" />
+        <div class = "orbit-caption" id= "paintr-caption-three">
+          Click the box with the image you want to paint over. On click, JS/jQuery get the background image of the small box and set the large painting box's background image to that image. Click the box with the color you want to paint with. The large painting box has thousands of small divs, each whose background-color changes to that color when hovered-over.
+        </div>
+      </li>
+      <li>
+        <img src = "/assets/paintr_saved_image.png" />
+        <div class = "orbit-caption" id= "paintr-caption-four">
+          When an image is saved, I isolate its url, which is provided by the "style" attribute. The jQuery .html() method lets me know which tiny divs have the specified background color and which do not. I AJAX this to the controller, which saves this image to the database. When re-rendering these images on the index and show pages, I merely create divs with style attributes equal to the images' urls. Each image div also contain all the tiny divs, whose background color corresponds to how they were saved. I was one of only two students in the class to finish this portion of the assignment! (Although in a future iteration I would create an array or a hash specifying which divs have which background colors, rather than saving all the divs. This would save database space.)
+        </div>
+      </li>
+    </ul>
+  </div>
 </div>
 
 
@@ -258,6 +290,14 @@
             <img class = "proj_image" src= "/assets/movies_show.png" />
             <div class = "make_rods_pink">
               <span>Rails</span> | <span>AJAX</span> | <span>RSpec/TDD</span>
+            </div>
+          </div>
+
+          <div id= "paintr" class = "small-6 large-6 columns">
+            <a href = "#" class = "pink" class = "move_down"> Paintr. </a>
+            <img class = "proj_image" src= "/assets/paintr_main.png" />
+            <div class = "make_rods_pink">
+              <span>JavaScript</span> | <span>AJAX</span> | <span>jQuery</span> | <span>HAML</span>| <span>Rails</span>
             </div>
           </div>
 
